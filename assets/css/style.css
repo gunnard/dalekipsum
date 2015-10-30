@@ -1,0 +1,36 @@
+.main-container {
+    background:url('../images/dalek-new.png') top right no-repeat;
+    background-attachment:fixed;
+    min-height:750px;
+}
+.header {
+    text-align: center;
+}
+.header h1 {
+    font-size:40px;
+    text-transform:uppercase;
+}
+.submitButton {
+    padding:5px;
+    margin:10px 0 0 0;
+}
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 3px;
+  pointer-events: none;
+  font-size:20px;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
