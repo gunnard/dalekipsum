@@ -34,7 +34,8 @@ function showParagraphs($words,$paragraphs,$wordType) {
     } else {
         $finalWords = getWordsFromFile($wordType);
     }   
-    $allSayings = explode('::',$finalWords);
+    //$allSayings = explode('::',$finalWords);
+    $allSayings = explode(PHP_EOL, $finalWords);
     $numSayings = count($allSayings);
     for ($paras=0;$paras<$paragraphs;$paras++) {
         for ($x=0;$x<$words;$x++) {
