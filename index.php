@@ -1,9 +1,10 @@
 <?php
+error_reporting(0);
 require_once('assets/main.php');
 if ($_POST) {
     $words = ($_POST['words']>0)? $_POST['words'] : 100; 
     $paragraphs = ($_POST['paragraphs']>0)? $_POST['paragraphs'] : 4; 
-    $wordType = $_POST['wordType']; 
+    $wordType = (strlen($_POST['wordType']) > 0) ? $_POST['wordType'] : "All"; 
     $results = showParagraphs($words,$paragraphs,$wordType);
 }
 ?>
